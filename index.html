@@ -3,45 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recipe: Canelones</title>
-  <link rel="stylesheet" href="css/main.css">
+  <title>Canelones Recipe</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header class="header">
-    <h1 class="title">Canelones</h1>
+    <h1 class="title">Canelones Recipe</h1>
   </header>
-  <section class="image">
-    <p>Delicious Homemade Canelones</p>
+
+  <section class="banner">
+    <div class="banner-image"><img src="src/canelones.jpg" alt="Canelones"></div>
   </section>
-  <section class="content">
-    <!-- Ingredients -->
+
+  <section class="ingredients-time">
     <div class="ingredients">
-      <h2>Ingredients</h2>
-      <ul>
-        <li><input type="checkbox"> 12 pasta sheets</li>
-        <li><input type="checkbox"> 500g ground beef</li>
-        <li><input type="checkbox"> 200g ricotta cheese</li>
-        <li><input type="checkbox"> 1 onion, finely chopped</li>
-        <li><input type="checkbox"> 2 garlic cloves, minced</li>
-        <li><input type="checkbox"> 400ml tomato sauce</li>
-        <li><input type="checkbox"> 100g grated cheese</li>
-        <li><input type="checkbox"> Olive oil</li>
-        <li><input type="checkbox"> Salt and pepper</li>
-      </ul>
-    </div>
-    <!-- Timer -->
-    <div class="timer">
+        <h2>INGREDIENTS</h2>
+        <div class="checkbox-container">
+          <ul>
+            <li><input type="checkbox"> Pasta sheets</li>
+            <li><input type="checkbox"> Ground beef</li>
+            <li><input type="checkbox"> Ricotta cheese</li>
+            <li><input type="checkbox"> Onion</li>
+            <li><input type="checkbox"> Garlic</li>
+          </ul>
+          <ul>
+            <li><input type="checkbox"> Tomato sauce</li>
+            <li><input type="checkbox"> Grated cheese</li>
+            <li><input type="checkbox"> Olive oil</li>
+            <li><input type="checkbox"> Salt</li>
+            <li><input type="checkbox"> Pepper</li>
+          </ul>
+        </div>
+      </div>
+
+    <div class="time">
       <h2>Time</h2>
-      <div class="clock">Preparation: 30 mins</div>
-      <div class="clock">Cooking: 40 mins</div>
+      <div class="time-display">
+        <div class="clock">⏱ 0:00</div>
+        <div class="timer-controls">
+          <button onclick="setTimer(5)">5</button>
+          <button onclick="setTimer(10)">10</button>
+          <button onclick="setTimer(15)">15</button>
+          <button onclick="setTimer(20)">20</button>
+        </div>
+        <div class="hourglass">⏳ 0:00</div>
+        <button class="start-btn" onclick="startTimer()">Start</button>
+      </div>
     </div>
   </section>
-  <!-- Preparation Steps -->
+
   <section class="preparation">
-    <h2>Preparation</h2>
-    <div class="step" id="step-1">1. Cook the pasta sheets in boiling water for 2-3 minutes. Drain and set aside.</div>
-    <div class="step" id="step-2">2. Heat olive oil in a pan and sauté the onion and garlic until soft.</div>
-    <div class="step" id="step-3">3. Add ground beef to the pan, cook until browned, and season with salt and pepper.</div>
-    <div class="step" id="step-4">4. Mix the cooked meat with ricotta cheese in a bowl.</div>
-    <div class="step" id="step-5">5. Fill each pasta sheet with the mixture and roll into canelones.</div>
-    <div class="step" id="step-6">6. Place the canelones in a baking dish, cover
+    <h2>PREPARATION</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <p>Cook the pasta sheets in boiling water for 2-3 minutes. Drain and set aside.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <p>Heat olive oil in a pan and sauté the onion and garlic until soft.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <p>Add ground beef, cook until browned, and season with salt and pepper.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <p>Mix the cooked meat with ricotta cheese, fill the pasta sheets, and roll into canelones.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Created by Jose ©</p>
+    <div class="social-icons">
+      <a href="https://es.linkedin.com/"><img src="src/linkedin.png" alt="LinkedIn"></a>
+      <a href="https://www.instagram.com/"><img src="src/ig.png" alt="Instagram"></a>
+      <a href="https://www.facebook.com/?locale=es_ES"><img src="src/fb.png" alt="Facebook"></a>
+      <a href="https://x.com/?lang=es"><img src="src/x.png" alt="X"></a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
